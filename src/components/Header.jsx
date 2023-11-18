@@ -13,7 +13,7 @@ const Header = () => {
                 <a href='/About-Us' className='hover:text-blue-400'> About us</a>
                 <a href='/Event' className='hover:text-blue-400'> Event</a>
                 <a href='/Services' className='hover:text-blue-400'> Services</a>
-                <a href='/' className='hover:text-blue-400'></a>
+                {/* <a href='/' className='hover:text-blue-400'></a> */}
                 <button className='bg-[#f2b263] text-white text-sm px-2 py-2 rounded-3xl hover:bg-black'>  Shnkalp </button>
             </div>
 
