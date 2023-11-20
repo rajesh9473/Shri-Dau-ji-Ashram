@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import AboutsUs from './pages/AboutsUs'
 import { Event } from './pages/Event'
 import { Services } from './pages/Services'
+import { Shankalp } from './pages/Shankalp'
 
 const App = () => {
   return (
@@ -18,6 +19,8 @@ const App = () => {
             <Route exact path='/About-Us' element={<AboutsUs />} />
             <Route exact path='/Event' element={<Event />} />
             <Route exact path='/Services'element={<Services/>}/>
+            <Route exact path='/Shankalp'element={<Shankalp/>}/>
+
           </Routes>
         </BrowserRouter>
       </div>

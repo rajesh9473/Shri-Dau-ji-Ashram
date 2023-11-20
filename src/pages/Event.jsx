@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Event = () => {
     return (
-        <div className='flex justify-between items-center      '>
+        <div className='flex justify-between items-center'>
             <div className='w-1/2'>
                 <img src='/assets/pic6.jpeg ' className='cover' alt='...' />
             </div>
