@@ -4,7 +4,7 @@ export const Shankalp = () => {
   return (
     <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-4'>
         <div className=''>
-        <img src='/assets/pic7.jpeg' className=' m-2 h-[500px] w-[500px]' alt='...'/>
+        <img src='/assets/dauji.jpg' className=' m-2 h-[500px] w-[500px]' alt='...'/>
 
         </div>
         <div className=''>
