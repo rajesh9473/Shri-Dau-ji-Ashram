@@ -27,7 +27,7 @@ const Header = () => {
                             }
 
                             {
-                                openMenu && <div className='absolute'>
+                                openMenu && <div className='absolute bg-white right-0 p-2'>
                                     <ul>
                                         <li>
                                             <a href='/' className='text-red-500 hover:text-blue row-span-3'>Home </a>
@@ -37,15 +37,15 @@ const Header = () => {
 
                                         </li>
                                         <li>
-                                            <a href='/About-Us' className='hover:text-blue-40 row-span-3'> Event</a>
+                                            <a href='/Event' className='hover:text-blue-40 row-span-3'> Event</a>
 
                                         </li>
                                         <li>
-                                            <a href='/About-Us' className='hover:text-blue-40 row-span-3'> About us</a>
+                                            <a href='/Services' className='hover:text-blue-40 row-span-3'> About us</a>
 
                                         </li>
                                         <li>
-                                            <a href='/About-Us' className='hover:text-blue-40 row-span-3'> About us</a>
+                                            <a href='/shankalp' className='hover:text-blue-40 row-span-3'> About us</a>
 
                                         </li>
 

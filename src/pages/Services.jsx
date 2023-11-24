@@ -1,4 +1,5 @@
 import React from 'react'
+import { Slider } from '../components/Slider'
 
 export const Services = () => {
     return (
@@ -18,6 +19,7 @@ export const Services = () => {
             <div className='alignment-center p-1 cover'>
                 <img src='/assets/cow.jpg' alt='...' />
             </div>
+            <Slider/>
         </div>
     )
 }
