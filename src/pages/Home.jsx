@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       <div className='h-screen w-full flex flex-col'>
-        <div className='flex-grow  flex flex-col  items-center decoration-4 justify-center' style={{ background: 'linear-gradient(to right , rgba(0,0,0,0.4) , rgba(0,0,0,0.4)),url(/assets/pic2.jpeg)' }}>
+        <div className='flex-grow  flex flex-col  items-center decoration-4 justify-center' style={{ background: 'linear-gradient(to right , rgba(0,0,0,0.4) , rgba(0,0,0,0.4)),url(/assets/pic2.jpeg)', backgroundPosition:'top' }}>
           <h1 className='text-4xl text-white  pt-20'>  GURUJI SHRI SHRI RAJ-RAJESHWAR MAHRAJ</h1>
           <div className='h-24 border border-dashed border-white'>
 

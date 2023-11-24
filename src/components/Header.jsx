@@ -29,22 +29,38 @@ const Header = () => {
                             {
                                 openMenu && <div className='absolute'>
                                     <ul>
-                                        <li>pooja</li>
-                                        <li>hawan</li>
-                                        <li>Grahparvesh</li>
-                                        <li>bhagwat katha</li>
+                                        <li>
+                                            <a href='/' className='text-red-500 hover:text-blue row-span-3'>Home </a>
+                                        </li>
+                                        <li>
+                                            <a href='/About-Us' className='hover:text-blue-40 row-span-3'> About us</a>
+
+                                        </li>
+                                        <li>
+                                            <a href='/About-Us' className='hover:text-blue-40 row-span-3'> Event</a>
+
+                                        </li>
+                                        <li>
+                                            <a href='/About-Us' className='hover:text-blue-40 row-span-3'> About us</a>
+
+                                        </li>
+                                        <li>
+                                            <a href='/About-Us' className='hover:text-blue-40 row-span-3'> About us</a>
+
+                                        </li>
+
                                     </ul>
                                 </div>
                             }
                         </div>
                         :
-                        <div class="grid grid-cols-5 grid-flow-row text-center items-center">
+                        <div className="grid grid-cols-5 grid-flow-row text-center items-center">
                             <a href='/' className='text-red-500 hover:text-blue row-span-3'>Home </a>
                             <a href='/About-Us' className='hover:text-blue-40 row-span-3'> About us</a>
                             <a href='/Event' className='hover:text-blue-40 row-span-3'> Event</a>
                             <a href='/Services' className='hover:text-blue-40 row-span-3'> Services</a>
-                            <a href='/Shankalp' className='hover:text-blue-40 row-span-3'>
-                                <button className='bg-[#f2b263] text-white text-sm px-5 py-2 rounded-3xl hover:bg-black'>  Shnkalp </button>
+                            <a role='button' href='/Shankalp' className=' bg-[#f263b2] text-white text-sm px-5 py-2 rounded-3xl hover:bg-transparent hover:border-2 hover:text-black row-span-3'>
+                                Shnkalp
                             </a>
                         </div>
                 }
