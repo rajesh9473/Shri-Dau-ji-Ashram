@@ -29,10 +29,10 @@ const Header = () => {
                             {
                                 openMenu && <div className='absolute'>
                                     <ul>
-                                        <li>ok</li>
-                                        <li>ok</li>
-                                        <li>ok</li>
-                                        <li>ok</li>
+                                        <li>pooja</li>
+                                        <li>hawan</li>
+                                        <li>Grahparvesh</li>
+                                        <li>bhagwat katha</li>
                                     </ul>
                                 </div>
                             }
