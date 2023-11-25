@@ -41,11 +41,11 @@ const Header = () => {
 
                                         </li>
                                         <li>
-                                            <a href='/Services' className='hover:text-blue-40 row-span-3'> About us</a>
+                                            <a href='/Services' className='hover:text-blue-40 row-span-3'> Services</a>
 
                                         </li>
                                         <li>
-                                            <a href='/shankalp' className='hover:text-blue-40 row-span-3'> About us</a>
+                                            <a href='/shankalp' className='hover:text-blue-40 row-span-3'> Shankalp</a>
 
                                         </li>
 
