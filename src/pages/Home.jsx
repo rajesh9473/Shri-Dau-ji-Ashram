@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       <div className='h-screen w-full flex flex-col'>
-        <div className='flex-grow  flex flex-col  items-center decoration-4 justify-center' style={{ background: 'linear-gradient(to right , rgba(0,0,0,0.4) , rgba(0,0,0,0.4)),url(/assets/pic2.jpeg)', backgroundPosition:'top' }}>
+        <div className='flex-grow  flex flex-col  items-center decoration-4 justify-center' style={{ background: 'linear-gradient(to right , rgba(0,0,0,0.4) , rgba(0,0,0,0.4)),url(/assets/pic2.jpeg)', backgroundPosition: 'top' }}>
           <h1 className='text-4xl text-white  pt-20'>  GURUJI SHRI SHRI RAJ-RAJESHWAR MAHRAJ</h1>
           <div className='h-24 border border-dashed border-white'>
 
@@ -47,7 +47,10 @@ const Home = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto saepe mollitia illum laboriosam, sed similique necessitatibus voluptatibus. Incidunt dolore illum consequatur, quae et quasi amet officia vero excepturi optio recusandae!</p>
         </div>
       </div>
-      <div className=' p-10 border border-black flex'>
+
+      {/* third section */}
+
+      <div className=' p-10 border border-black flex col-span-2'>
         <div className='w-full'>
           <img src='assets/pic3.jpeg' alt='...' />
         </div>
@@ -55,25 +58,44 @@ const Home = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, praesentium nesciunt laudantium quidem, unde aperiam mollitia quae eligendi ducimus cupiditate nostrum doloribus aliquam hic repudiandae molestiae harum tempora! Pariatur, culpa.
         </div>
       </div>
-      <div className='p-2'>
-        <div className='w-full px-2'>
-          <img src='assets/pic4.jpeg' alt='...' />
 
-          <div className='p-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eveniet voluptatem non quas delectus natus dolore. Autem velit, aperiam perferendis facilis, facere dolores molestiae reiciendis dolor dolorem culpa et impedit. </div>
+      <div className='p-2'>
+        <div className='w-full grid sm:grid-cols-1 lg:grid-cols-3'>
+          <div>
+
+          </div>
+          <div>
+            <img src='assets/pic4.jpeg ' alt='...' />
+            3Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eveniet voluptatem non quas delectus natus dolore. Autem velit, aperiam perferendis facilis, facere dolores molestiae reiciendis dolor dolorem culpa et impedit. </div>
+          </div>
+
+          <div className='p-2'>
         </div>
-        <div className='gridgrid-cols-1 w-full px-3 text-center '>
+        <div className='grid grid-cols-2 w-full px-3 text-center '>
           <div>
             <img src='assets/pic5.jpeg' alt='...' />
 
           </div>
+          {/* third page */}          Third page
           <div className=''>
-            photo 2
+          <div>
+          <img src='assets/pic5.jpeg' alt='...'/>
+
+          </div>
+
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut minima delectus illum, magni deserunt tenetur, iusto, ullam quas quo impedit aliquid exercitationem corporis sequi? Quo esse ducimus id est perferendis?
 
           </div>
         </div>
-        <div className='grid grid-cols-1  w-full px-3 text-center'>
-          <img src='assets/pic3.jpeg' className='h-[100%] w-full' alt='...' />
+        <div className='grid lg: grid-cols-2 sm:grid-cols-1 w-full px-3 text-center'>
+          <div>
+            <img src='assets/pic3.jpeg' className='h-[100%] w-full' alt='...' />
+
+          </div>
+          <div>
+          <img src='assets/pic6.jpeg' alt='...'/>
+
+          </div>
 
           <div className='p-2'>
 
@@ -82,29 +104,29 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='grid sm:grid-cols-1 lg:grid-cols-1 text-center xl:grid-cols-1 align-middle'>
-        <button className='bg-colour bg-orange-200 rounded-full py-2 px-5'>
+      <div className ='grid sm:grid-cols-1 lg:grid-cols-1 text-center xl:grid-cols-1 align-middle'>
+        <button className ='bg-colour bg-orange-200 rounded-full py-2 px-4'>
           Shankalp for our Ashram
         </button>
-        <div className='flex justify-evenly p-10'>
+        <div className ='flex justify-evenly p-10'>
           <img src="assets/pic3.jpeg" alt="..." />
           <div> text </div>
         </div>
-        <div className='flex  justify-evenly p-5'>
+        <div className ='flex  justify-evenly p-5'>
           <img src="assets/pic3.jpeg" alt="..." />
 
           <div>
             text
           </div>
         </div>
-        <div className='flex justify-evenly'>
+        <div className ='flex justify-evenly'>
           <img src="assets/pic3.jpeg" alt="..." />
           <div>
             text
           </div>
         </div>
       </div>
-      <div className=' flex justify-center'>
+      <div className =' flex justify-center bg-orange-500'>
         <img src='assets/pic1.png' alt='...' />
       </div>
       <div>
