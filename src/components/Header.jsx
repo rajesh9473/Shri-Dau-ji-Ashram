@@ -2,14 +2,23 @@ import React, { useState } from 'react'
 import GifLogo from '../Gifs/logo1.gif'
 import { isMobile } from 'react-device-detect'
 import { GiHamburgerMenu, GiSplitCross } from "react-icons/gi";
+import GlobalModal from './GlobalModal';
 
 
 const Header = () => {
 
     const [openMenu, setOpenMenu] = useState(false)
+    const [open, setOpen] = useState(false)
+
+    const handleClose = () => {
+        setOpen(!open)
+    }
+
+
 
     return (
         <div className="grid grid-cols-2 w-full text-black-500 border-b border-black bg-[#fdefea]">
+            <GlobalModal open={open} handleClose={handleClose} />
             <div className='flex items-center'>
                 <img src={GifLogo} className="h-20 w-20" alt='...' />
                 Shri Dau ji Ashram
@@ -54,14 +63,20 @@ const Header = () => {
                             }
                         </div>
                         :
-                        <div className="grid grid-cols-5 grid-flow-row text-center items-center">
+                        <div className="grid grid-cols-7 grid-flow-row text-center items-center">
                             <a href='/' className='text-red-500 hover:text-blue row-span-3'>Home </a>
                             <a href='/About-Us' className='hover:text-blue-40 row-span-3'> About us</a>
                             <a href='/Event' className='hover:text-blue-40 row-span-3'> Event</a>
                             <a href='/Services' className='hover:text-blue-40 row-span-3'> Services</a>
-                            <a role='button' href='/Shankalp' className=' bg-[#f263b2] text-white text-sm px-5 py-2 rounded-3xl hover:bg-transparent hover:border-2 hover:text-black row-span-3'>
+                            <a href='/Loginx' className='hover:text-blue-40 row-span-3'> X</a>
+                            <a role='button' href='/Shankalp' className=' bg-[#f263b2] text-white text-sm px-4 py-2 rounded-3xl hover:bg-transparent hover:border-2 hover:text-black row-span-3'>
                                 Shnkalp
                             </a>
+
+                            <button onClick={() => setOpen(true)} className=' bg-[#f2b663] text-white text-sm px-4 py-2 rounded-3xl hover:border-2 hover:text-black row-span-3'>
+                                Login
+                            </button>
+                        
                         </div>
                 }
             </div>
