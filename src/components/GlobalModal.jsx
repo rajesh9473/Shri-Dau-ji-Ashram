@@ -5,9 +5,10 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 import Modal from './Modal'
 import { API_URL } from '../config'
 import { useNavigate } from 'react-router-dom'
+import Swal from 'sweetalert2'
+
 
 const GlobalModal = ({ open, handleClose }) => {
-
 
     const [inputs, setInputs] = useState({});
     const [error, setError] = useState(null);
@@ -37,6 +38,11 @@ const GlobalModal = ({ open, handleClose }) => {
             // Assuming the API returns a token upon successful login
             const data = await response.json();
             console.log('Login successful', data);
+            Swal.fire({
+                // title: 'Error!',
+                // text: 'Do you want to continue',
+                icon: 'success',
+            })
 
             // Redirect to the desired route after successful login
             navigate('/login');
@@ -81,8 +87,8 @@ const GlobalModal = ({ open, handleClose }) => {
                 <button onClick={handleSubmit} className='mt-4 bg-yellow-300 p-2' >
                     Login
                 </button>
-               </div>
-            </Modal>
+            </div>
+        </Modal>
 
 
 

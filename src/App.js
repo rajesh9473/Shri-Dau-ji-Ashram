@@ -11,7 +11,6 @@ import PrivatePages from './pages/PrivatePages'
 import Menu from './pages/Menu'
 import LoginX from './pages/LoginX'
 const App = () => {
-
   return (
     <>
       <div>
